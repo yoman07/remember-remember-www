@@ -369,46 +369,44 @@
     <script>
         $(document).ready(function() {
             appMaster.preLoader();
-                <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-58000799-4', 'auto');
-      ga('send', 'pageview');
+          ga('create', 'UA-58000799-4', 'auto');
+          ga('send', 'pageview');
 
-        var howItWorks = document.getElementById('how_it_works');
-        addListener(howItWorks, 'click', function() {
-            ga('send', 'event', 'button', 'click', 'how_it_works');
-        });
+            var howItWorks = document.getElementById('how_it_works');
+            addListener(howItWorks, 'click', function() {
+                ga('send', 'event', 'button', 'click', 'how_it_works');
+            });
 
-        var howItWorksRwd = document.getElementById('how_it_works_rwd');
-        addListener(howItWorksRwd, 'click', function() {
-            ga('send', 'event', 'button', 'click', 'how_it_works_rwd');
-        });
+            var howItWorksRwd = document.getElementById('how_it_works_rwd');
+            addListener(howItWorksRwd, 'click', function() {
+                ga('send', 'event', 'button', 'click', 'how_it_works_rwd');
+            });
 
 
-        var getApp = document.getElementById('get_app');
-            addListener(getApp, 'click', function() {
-            ga('send', 'event', 'button', 'click', 'get_app');
-        });
+            var getApp = document.getElementById('get_app');
+                addListener(getApp, 'click', function() {
+                ga('send', 'event', 'button', 'click', 'get_app');
+            });
 
-        var downloadAndroid = document.getElementById('download_android');
-        addListener(downloadAndroid, 'click', function() {
-            ga('send', 'event', 'button', 'click', 'download_android');
-        });
+            var downloadAndroid = document.getElementById('download_android');
+            addListener(downloadAndroid, 'click', function() {
+                ga('send', 'event', 'button', 'click', 'download_android');
+            });
 
-        var downloadIos = document.getElementById('download_ios');
-        addListener(downloadIos, 'click', function() {
-            ga('send', 'event', 'button', 'click', 'download_ios');
-        });
+            var downloadIos = document.getElementById('download_ios');
+            addListener(downloadIos, 'click', function() {
+                ga('send', 'event', 'button', 'click', 'download_ios');
+            });
 
-function addListener(element, type, callback) {
- if (element.addEventListener) element.addEventListener(type, callback);
- else if (element.attachEvent) element.attachEvent('on' + type, callback);
-}
-    </script>
+            function addListener(element, type, callback) {
+             if (element.addEventListener) element.addEventListener(type, callback);
+             else if (element.attachEvent) element.attachEvent('on' + type, callback);
+            }
         });
     </script>
 </body>
