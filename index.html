@@ -259,13 +259,13 @@
                             <img src="assets/img/freeze/freeze-angled2.png" alt="">
                         </div>
  -->                        <div class="platforms">
-                            <a href="https://play.google.com/store/apps/details?id=com.androidgecko.rmbrrmbr" id="download_android" class="btn btn-primary inverse scrollpoint sp-effect1">
+                            <a href="https://play.google.com/store/apps/details?id=com.androidgecko.rmbrrmbr" id="download_android_bottom" class="btn btn-primary inverse scrollpoint sp-effect1">
                                 <i class="fa fa-android fa-3x pull-left"></i>
                                 <span>Download for</span><br>
                                 <b>Android</b>
                             </a>
                              
-                                <a href="https://itunes.apple.com/app/apple-store/id951334398?pt=11659809&ct=landing_page&mt=8" id="download_ios" class="btn btn-primary inverse scrollpoint sp-effect2">
+                                <a href="https://itunes.apple.com/app/apple-store/id951334398?pt=11659809&ct=landing_page&mt=8" id="download_ios_bottom" class="btn btn-primary inverse scrollpoint sp-effect2">
                                     <i class="fa fa-apple fa-3x pull-left"></i>
                                     <span>Download for</span><br>
                                     <b>Apple IOS</b>
@@ -400,6 +400,17 @@
 
             var downloadIos = document.getElementById('download_ios');
             addListener(downloadIos, 'click', function() {
+                ga('send', 'event', 'button', 'click', 'download_ios');
+            });
+
+
+            var downloadAndroidBottom = document.getElementById('download_android_bottom');
+            addListener(downloadAndroidBottom, 'click', function() {
+                ga('send', 'event', 'button', 'click', 'download_android');
+            });
+
+            var downloadIosBottom = document.getElementById('download_ios_bottom');
+            addListener(downloadIosBottom, 'click', function() {
                 ga('send', 'event', 'button', 'click', 'download_ios');
             });
 
